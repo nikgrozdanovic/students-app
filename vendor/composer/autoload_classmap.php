@@ -6,6 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'StudentsApp\\Data\\Connection' => $baseDir . '/src/data/Connection.php',
-    'StudentsApp\\School\\Students' => $baseDir . '/src/school/Students.php',
+    'AltoRouter' => $vendorDir . '/altorouter/altorouter/AltoRouter.php',
+    'mindplay\\readable' => $vendorDir . '/mindplay/readable/src/readable.php',
 );

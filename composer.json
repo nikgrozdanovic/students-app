@@ -3,5 +3,8 @@
         "psr-4": {
             "StudentsApp\\": "src/"
         }
+    },
+    "require": {
+        "bramus/router": "~1.5"
     }
 }
