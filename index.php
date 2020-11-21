@@ -1,6 +1,6 @@
 <?php
 
-use StudentsApp\School\Students;
+use StudentsApp\School\Student;
 
 require_once realpath('vendor/autoload.php');
 
@@ -8,7 +8,9 @@ $router = new \Bramus\Router\Router();
 
 // Define routes
 $router->get('/students/(\d+)', function($id) {
-    echo $id;
+    $students = new Student;
+
+    echo $students->show($id);
 });
 
 
