@@ -18,4 +18,30 @@ class Grade extends Connection
 
         return $grades;
     }
+
+    public function average(array $arr, string $board)
+    {
+        $sum = 0;
+
+        foreach ($arr as $grade) {
+            $sum += $grade;
+        }
+
+        if ($board == 'CSM') {
+            $average = $sum / count($arr);
+        }
+
+        if ($board == 'CSMB') {
+            $lowest = min($arr);
+            $lowestIndex = array_search($lowest, $arr);
+            unset($arr[$lowestIndex]);
+            
+            $highest = max($arr);
+
+            $average = $highest;
+        }
+        
+
+        return number_format($average,1,".",",");
+    }
 }
