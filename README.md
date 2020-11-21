@@ -15,4 +15,4 @@ In order for the routing library to work you will need to host the app on your l
 php -S localhost:8080
 ```
 
-To get the responses you can go to `/students/{student_id}` (replace the student_id with a integer number of the user whose info you want to see)
+To get the responses you can go to `/test/students/{student_id}` (replace the student_id with a integer number of the user whose info you want to see)
