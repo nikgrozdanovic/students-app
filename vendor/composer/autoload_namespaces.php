@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Steampixel' => array($vendorDir . '/steampixel/simple-php-router/src'),
     'Bramus' => array($vendorDir . '/bramus/router/src'),
 );

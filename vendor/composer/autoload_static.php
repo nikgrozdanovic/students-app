@@ -35,6 +35,11 @@ class ComposerStaticInit2f8a09153aa2310705eb4a2f7a205147
         'S' => 
         array (
             'StudentsApp\\' => 12,
+            'Spatie\\Macroable\\' => 17,
+        ),
+        'R' => 
+        array (
+            'Rareloop\\Router\\' => 16,
         ),
         'P' => 
         array (
@@ -62,6 +67,14 @@ class ComposerStaticInit2f8a09153aa2310705eb4a2f7a205147
         'StudentsApp\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Spatie\\Macroable\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/macroable/src',
+        ),
+        'Rareloop\\Router\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rareloop/router/src',
         ),
         'Psr\\Http\\Server\\' => 
         array (
@@ -96,6 +109,13 @@ class ComposerStaticInit2f8a09153aa2310705eb4a2f7a205147
     );
 
     public static $prefixesPsr0 = array (
+        'S' => 
+        array (
+            'Steampixel' => 
+            array (
+                0 => __DIR__ . '/..' . '/steampixel/simple-php-router/src',
+            ),
+        ),
         'B' => 
         array (
             'Bramus' => 
@@ -106,98 +126,7 @@ class ComposerStaticInit2f8a09153aa2310705eb4a2f7a205147
     );
 
     public static $classMap = array (
-        'Bramus\\Router\\Router' => __DIR__ . '/..' . '/bramus/router/src/Bramus/Router/Router.php',
-        'Interop\\Http\\Server\\MiddlewareInterface' => __DIR__ . '/..' . '/http-interop/http-server-middleware/src/MiddlewareInterface.php',
-        'Invoker\\CallableResolver' => __DIR__ . '/..' . '/php-di/invoker/src/CallableResolver.php',
-        'Invoker\\Exception\\InvocationException' => __DIR__ . '/..' . '/php-di/invoker/src/Exception/InvocationException.php',
-        'Invoker\\Exception\\NotCallableException' => __DIR__ . '/..' . '/php-di/invoker/src/Exception/NotCallableException.php',
-        'Invoker\\Exception\\NotEnoughParametersException' => __DIR__ . '/..' . '/php-di/invoker/src/Exception/NotEnoughParametersException.php',
-        'Invoker\\Invoker' => __DIR__ . '/..' . '/php-di/invoker/src/Invoker.php',
-        'Invoker\\InvokerInterface' => __DIR__ . '/..' . '/php-di/invoker/src/InvokerInterface.php',
-        'Invoker\\ParameterResolver\\AssociativeArrayResolver' => __DIR__ . '/..' . '/php-di/invoker/src/ParameterResolver/AssociativeArrayResolver.php',
-        'Invoker\\ParameterResolver\\Container\\ParameterNameContainerResolver' => __DIR__ . '/..' . '/php-di/invoker/src/ParameterResolver/Container/ParameterNameContainerResolver.php',
-        'Invoker\\ParameterResolver\\Container\\TypeHintContainerResolver' => __DIR__ . '/..' . '/php-di/invoker/src/ParameterResolver/Container/TypeHintContainerResolver.php',
-        'Invoker\\ParameterResolver\\DefaultValueResolver' => __DIR__ . '/..' . '/php-di/invoker/src/ParameterResolver/DefaultValueResolver.php',
-        'Invoker\\ParameterResolver\\NumericArrayResolver' => __DIR__ . '/..' . '/php-di/invoker/src/ParameterResolver/NumericArrayResolver.php',
-        'Invoker\\ParameterResolver\\ParameterResolver' => __DIR__ . '/..' . '/php-di/invoker/src/ParameterResolver/ParameterResolver.php',
-        'Invoker\\ParameterResolver\\ResolverChain' => __DIR__ . '/..' . '/php-di/invoker/src/ParameterResolver/ResolverChain.php',
-        'Invoker\\ParameterResolver\\TypeHintResolver' => __DIR__ . '/..' . '/php-di/invoker/src/ParameterResolver/TypeHintResolver.php',
-        'Invoker\\Reflection\\CallableReflection' => __DIR__ . '/..' . '/php-di/invoker/src/Reflection/CallableReflection.php',
-        'Laminas\\Diactoros\\AbstractSerializer' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/AbstractSerializer.php',
-        'Laminas\\Diactoros\\CallbackStream' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/CallbackStream.php',
-        'Laminas\\Diactoros\\ConfigProvider' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/ConfigProvider.php',
-        'Laminas\\Diactoros\\Exception\\DeserializationException' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Exception/DeserializationException.php',
-        'Laminas\\Diactoros\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Exception/ExceptionInterface.php',
-        'Laminas\\Diactoros\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Exception/InvalidArgumentException.php',
-        'Laminas\\Diactoros\\Exception\\InvalidStreamPointerPositionException' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Exception/InvalidStreamPointerPositionException.php',
-        'Laminas\\Diactoros\\Exception\\RuntimeException' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Exception/RuntimeException.php',
-        'Laminas\\Diactoros\\Exception\\SerializationException' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Exception/SerializationException.php',
-        'Laminas\\Diactoros\\Exception\\UnreadableStreamException' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Exception/UnreadableStreamException.php',
-        'Laminas\\Diactoros\\Exception\\UnrecognizedProtocolVersionException' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Exception/UnrecognizedProtocolVersionException.php',
-        'Laminas\\Diactoros\\Exception\\UnrewindableStreamException' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Exception/UnrewindableStreamException.php',
-        'Laminas\\Diactoros\\Exception\\UnseekableStreamException' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Exception/UnseekableStreamException.php',
-        'Laminas\\Diactoros\\Exception\\UntellableStreamException' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Exception/UntellableStreamException.php',
-        'Laminas\\Diactoros\\Exception\\UnwritableStreamException' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Exception/UnwritableStreamException.php',
-        'Laminas\\Diactoros\\Exception\\UploadedFileAlreadyMovedException' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Exception/UploadedFileAlreadyMovedException.php',
-        'Laminas\\Diactoros\\Exception\\UploadedFileErrorException' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Exception/UploadedFileErrorException.php',
-        'Laminas\\Diactoros\\HeaderSecurity' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/HeaderSecurity.php',
-        'Laminas\\Diactoros\\MessageTrait' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/MessageTrait.php',
-        'Laminas\\Diactoros\\Module' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Module.php',
-        'Laminas\\Diactoros\\PhpInputStream' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/PhpInputStream.php',
-        'Laminas\\Diactoros\\RelativeStream' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/RelativeStream.php',
-        'Laminas\\Diactoros\\Request' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Request.php',
-        'Laminas\\Diactoros\\RequestFactory' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/RequestFactory.php',
-        'Laminas\\Diactoros\\RequestTrait' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/RequestTrait.php',
-        'Laminas\\Diactoros\\Request\\ArraySerializer' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Request/ArraySerializer.php',
-        'Laminas\\Diactoros\\Request\\Serializer' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Request/Serializer.php',
-        'Laminas\\Diactoros\\Response' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Response.php',
-        'Laminas\\Diactoros\\ResponseFactory' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/ResponseFactory.php',
-        'Laminas\\Diactoros\\Response\\ArraySerializer' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Response/ArraySerializer.php',
-        'Laminas\\Diactoros\\Response\\EmptyResponse' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Response/EmptyResponse.php',
-        'Laminas\\Diactoros\\Response\\HtmlResponse' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Response/HtmlResponse.php',
-        'Laminas\\Diactoros\\Response\\InjectContentTypeTrait' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Response/InjectContentTypeTrait.php',
-        'Laminas\\Diactoros\\Response\\JsonResponse' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Response/JsonResponse.php',
-        'Laminas\\Diactoros\\Response\\RedirectResponse' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Response/RedirectResponse.php',
-        'Laminas\\Diactoros\\Response\\Serializer' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Response/Serializer.php',
-        'Laminas\\Diactoros\\Response\\TextResponse' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Response/TextResponse.php',
-        'Laminas\\Diactoros\\Response\\XmlResponse' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Response/XmlResponse.php',
-        'Laminas\\Diactoros\\ServerRequest' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/ServerRequest.php',
-        'Laminas\\Diactoros\\ServerRequestFactory' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/ServerRequestFactory.php',
-        'Laminas\\Diactoros\\Stream' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Stream.php',
-        'Laminas\\Diactoros\\StreamFactory' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/StreamFactory.php',
-        'Laminas\\Diactoros\\UploadedFile' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/UploadedFile.php',
-        'Laminas\\Diactoros\\UploadedFileFactory' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/UploadedFileFactory.php',
-        'Laminas\\Diactoros\\Uri' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Uri.php',
-        'Laminas\\Diactoros\\UriFactory' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/UriFactory.php',
-        'Laminas\\ZendFrameworkBridge\\Autoloader' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/Autoloader.php',
-        'Laminas\\ZendFrameworkBridge\\ConfigPostProcessor' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/ConfigPostProcessor.php',
-        'Laminas\\ZendFrameworkBridge\\Module' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/Module.php',
-        'Laminas\\ZendFrameworkBridge\\Replacements' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/Replacements.php',
-        'Laminas\\ZendFrameworkBridge\\RewriteRules' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/RewriteRules.php',
-        'Psr\\Container\\ContainerExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerExceptionInterface.php',
-        'Psr\\Container\\ContainerInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerInterface.php',
-        'Psr\\Container\\NotFoundExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/NotFoundExceptionInterface.php',
-        'Psr\\Http\\Message\\MessageInterface' => __DIR__ . '/..' . '/psr/http-message/src/MessageInterface.php',
-        'Psr\\Http\\Message\\RequestFactoryInterface' => __DIR__ . '/..' . '/psr/http-factory/src/RequestFactoryInterface.php',
-        'Psr\\Http\\Message\\RequestInterface' => __DIR__ . '/..' . '/psr/http-message/src/RequestInterface.php',
-        'Psr\\Http\\Message\\ResponseFactoryInterface' => __DIR__ . '/..' . '/psr/http-factory/src/ResponseFactoryInterface.php',
-        'Psr\\Http\\Message\\ResponseInterface' => __DIR__ . '/..' . '/psr/http-message/src/ResponseInterface.php',
-        'Psr\\Http\\Message\\ServerRequestFactoryInterface' => __DIR__ . '/..' . '/psr/http-factory/src/ServerRequestFactoryInterface.php',
-        'Psr\\Http\\Message\\ServerRequestInterface' => __DIR__ . '/..' . '/psr/http-message/src/ServerRequestInterface.php',
-        'Psr\\Http\\Message\\StreamFactoryInterface' => __DIR__ . '/..' . '/psr/http-factory/src/StreamFactoryInterface.php',
-        'Psr\\Http\\Message\\StreamInterface' => __DIR__ . '/..' . '/psr/http-message/src/StreamInterface.php',
-        'Psr\\Http\\Message\\UploadedFileFactoryInterface' => __DIR__ . '/..' . '/psr/http-factory/src/UploadedFileFactoryInterface.php',
-        'Psr\\Http\\Message\\UploadedFileInterface' => __DIR__ . '/..' . '/psr/http-message/src/UploadedFileInterface.php',
-        'Psr\\Http\\Message\\UriFactoryInterface' => __DIR__ . '/..' . '/psr/http-factory/src/UriFactoryInterface.php',
-        'Psr\\Http\\Message\\UriInterface' => __DIR__ . '/..' . '/psr/http-message/src/UriInterface.php',
-        'Psr\\Http\\Server\\MiddlewareInterface' => __DIR__ . '/..' . '/psr/http-server-middleware/src/MiddlewareInterface.php',
-        'Psr\\Http\\Server\\RequestHandlerInterface' => __DIR__ . '/..' . '/psr/http-server-handler/src/RequestHandlerInterface.php',
-        'StudentsApp\\Data\\Connection' => __DIR__ . '/../..' . '/src/data/Connection.php',
-        'StudentsApp\\School\\Grade' => __DIR__ . '/../..' . '/src/school/Grade.php',
-        'StudentsApp\\School\\Student' => __DIR__ . '/../..' . '/src/school/Student.php',
-        'mindplay\\middleman\\ContainerResolver' => __DIR__ . '/..' . '/mindplay/middleman/src/ContainerResolver.php',
-        'mindplay\\middleman\\Delegate' => __DIR__ . '/..' . '/mindplay/middleman/src/Delegate.php',
-        'mindplay\\middleman\\Dispatcher' => __DIR__ . '/..' . '/mindplay/middleman/src/Dispatcher.php',
+        'AltoRouter' => __DIR__ . '/..' . '/altorouter/altorouter/AltoRouter.php',
         'mindplay\\readable' => __DIR__ . '/..' . '/mindplay/readable/src/readable.php',
     );
 
