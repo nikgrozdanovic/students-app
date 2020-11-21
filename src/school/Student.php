@@ -42,29 +42,31 @@ class Student extends Connection
                 $student['average'] = $average;
                 $student['final_result'] = $final;
             }
-        }
 
-        if ($board == 'CSM') {
-            $response = json_encode($student);
-        } else {
-            $xml_header = '<?xml version="1.0" encoding="UTF-8"?><Student></Student>';
-            $xml = new \SimpleXMLElement($xml_header);
-
-            $id = $xml->addChild('id', $student['id']);
-            $name = $xml->addChild('name', $student['name']);
-            $grades = $xml->addChild('grades');
-            
-            foreach ($student['grades'] as $grade) {
-                $grades->addChild('grade', $grade);
+            if ($board == 'CSM') {
+                $response = json_encode($student);
+            } else {
+                $xml_header = '<?xml version="1.0" encoding="UTF-8"?><Student></Student>';
+                $xml = new \SimpleXMLElement($xml_header);
+    
+                $id = $xml->addChild('id', $student['id']);
+                $name = $xml->addChild('name', $student['name']);
+                $grades = $xml->addChild('grades');
+                
+                foreach ($student['grades'] as $grade) {
+                    $grades->addChild('grade', $grade);
+                }
+    
+                $average = $xml->addChild('average', $student['average']);
+                $final_result = $xml->addChild('final_result', $student['final_result']);
+    
+                $response = $xml->asXML();
             }
 
-            $average = $xml->addChild('average', $student['average']);
-            $final_result = $xml->addChild('final_result', $student['final_result']);
-
-            $response = $xml->asXML();
         }
+         
+        $response = 'Student with ID - ' . $id . ' does not exist.';
         
-
         return $response;
     }
 }
